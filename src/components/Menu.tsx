@@ -1,4 +1,5 @@
 import {
+  IonCol,
   IonContent,
   IonFab,
   IonFabButton,
@@ -69,7 +70,7 @@ const Menu: React.FC = () => {
   return (
     <IonMenu contentId="main" type="overlay" style={{background:"white"}}>
       <IonContent style={{background:"white"}}>
-        <IonList id="inbox-list">
+        <IonList>
           <IonRow style={{textAlign:"center", justifyContent:"center"}}>
             <img src='assets/images/logo-xentra.png' width="25%" height="auto" style={{textAlign:"center", justifyContent:"center"}}></img>
           </IonRow>
@@ -78,8 +79,16 @@ const Menu: React.FC = () => {
               <IonIcon icon={closeOutline}></IonIcon>
             </IonFabButton>
           </IonFab>
-          <IonListHeader style={{color:"black"}}>Miptha</IonListHeader>
-          <IonNote>dev.miptha@gmail.com</IonNote>
+          <IonRow style={{padding:"10px"}}>
+            <IonCol>
+              <IonRow>
+                <IonText style={{color:"black", fontSize:""}}>Miptha</IonText>
+              </IonRow>
+              <IonRow>
+                <IonText style={{color:"black", fontSize:""}}>dev.miptha@gmail.com</IonText>
+              </IonRow>
+            </IonCol>
+          </IonRow>
           {/* {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
