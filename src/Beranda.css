@@ -1,5 +1,5 @@
 *{font-family: Helvetica}
 
 .bck-card{
-    background: rgb(red, green, blue);
+    background:linear-gradient(-50deg,#2980B9 25%,  #FFFFFF 50%, #6DD5FA 75%);
 }
