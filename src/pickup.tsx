@@ -1,6 +1,6 @@
 import { BarcodeScanner } from "@ionic-native/barcode-scanner";
-import { IonActionSheet, IonButtons, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonMenuButton, IonPage, IonRow, IonText, IonToolbar } from "@ionic/react"
-import { ellipseOutline } from "ionicons/icons"
+import { IonActionSheet, IonButtons, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonItemDivider, IonMenuButton, IonPage, IonRow, IonText, IonToolbar } from "@ionic/react"
+import { call, callOutline, ellipseOutline, logoWhatsapp } from "ionicons/icons"
 import { useState } from "react";
 
 const pickup: React.FC = () => {
@@ -39,12 +39,12 @@ const pickup: React.FC = () => {
         <IonContent>
             <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
                 <IonGrid>
-                  <IonRow style={{borderBottom:"solid 1px black"}}>
+                  <IonRow style={{borderBottom:"solid 1px black"}} >
                     <IonCol size='6' style={{textAlign:"start"}}>
                       <h6 style={{fontWeight:"800", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621</h6>
                     </IonCol>
                     <IonCol size='6' style={{textAlign:"end", padding:"10px 0"}}>
-                      <button style={{padding:"5px", borderRadius:"5px", background:"#0000A0", color:"white"}}>Menunggu Proses</button>
+                      <button style={{padding:"5px", borderRadius:"5px", background:"#0000A0", color:"white"}}>Konfirmasi Pickup</button>
                     </IonCol>
                   </IonRow>
                   <IonRow onClick={detailpickup}>
@@ -52,7 +52,7 @@ const pickup: React.FC = () => {
                       <IonRow style={{padding:"10px 0"}}>
                         <IonIcon icon={ellipseOutline} style={{background:"#A3A3A3", width:"24px", height:"24px", borderRadius:"50%", color:"#A3A3A3", margin:"auto"}}></IonIcon>
                       </IonRow>
-                      <IonRow style={{padding:"10px 0"}}>
+                      <IonRow style={{padding:"10px 0",marginTop:"10px"}}>
                         <IonIcon icon={ellipseOutline} style={{background:"#0000A0", width:"24px", height:"24px", borderRadius:"50%", color:"#0000A0", margin:"auto"}}></IonIcon>
                       </IonRow>
                     </IonCol>
@@ -60,7 +60,7 @@ const pickup: React.FC = () => {
                       <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column"}}>
                       {/* {a['id']} */}
                         <h6 style={{margin:0, padding:0, color:"black"}}>
-                          Dikha
+                          Dikha Fransananda
                         </h6>
                         <p style={{margin:0, padding:0}}>
                           Kepuluan Riau, Indonesia
@@ -69,17 +69,100 @@ const pickup: React.FC = () => {
                       {/* <IonItem lines='none'> 
                           <a href='/orderdetail?order_id=' slot="end" ><IonIcon icon={chevronForwardOutline} ></IonIcon></a>
                     </IonItem> */}
-                      <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column"}}>
+                      <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column", marginTop:"10px"}}>
                       <h6 style={{margin:0, padding:0, color:"black"}}>
-                         Dikha
+                         Miptha
                         </h6>
                         <p style={{margin:0, padding:0}}>
                          Tangerang, Banten, Indonesia
                         </p>
                       </IonRow>
                     </IonCol>
+                    <IonCol size="1" style={{marginRight:"20px"}}>
+                      <IonRow>
+                        <IonCol>
+                          <IonIcon src={logoWhatsapp} style={{fontSize:"30px", color:"#27dd89"}}></IonIcon>
+                        </IonCol>
+                        <IonCol>
+                          <IonIcon src={logoWhatsapp} style={{fontSize:"30px", color:"#27dd89", marginTop:"20px"}}></IonIcon>
+                        </IonCol>
+                      </IonRow>
+                    </IonCol>
+                    <IonCol size="1" style={{marginRight:"10px"}}>
+                      <IonRow>
+                        <IonCol>
+                          <IonIcon src={callOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
+                        </IonCol>
+                        <IonCol>
+                          <IonIcon src={callOutline} style={{fontSize:"30px", color:"#0000A0", marginTop:"20px"}}></IonIcon>
+                        </IonCol>
+                      </IonRow>
+                    </IonCol>
                   </IonRow>
-                
+                </IonGrid>
+              </IonCard>
+              <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
+                <IonGrid>
+                  <IonRow style={{borderBottom:"solid 1px black"}} >
+                    <IonCol size='6' style={{textAlign:"start"}}>
+                      <h6 style={{fontWeight:"800", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621</h6>
+                    </IonCol>
+                    <IonCol size='6' style={{textAlign:"end", padding:"10px 0"}}>
+                      <button style={{padding:"5px", borderRadius:"5px", background:"red", color:"white"}}>Gagal Pickup</button>
+                    </IonCol>
+                  </IonRow>
+                  <IonRow onClick={detailpickup}>
+                    <IonCol size='2'>
+                      <IonRow style={{padding:"10px 0"}}>
+                        <IonIcon icon={ellipseOutline} style={{background:"#A3A3A3", width:"24px", height:"24px", borderRadius:"50%", color:"#A3A3A3", margin:"auto"}}></IonIcon>
+                      </IonRow>
+                      <IonRow style={{padding:"10px 0",marginTop:"10px"}}>
+                        <IonIcon icon={ellipseOutline} style={{background:"#0000A0", width:"24px", height:"24px", borderRadius:"50%", color:"#0000A0", margin:"auto"}}></IonIcon>
+                      </IonRow>
+                    </IonCol>
+                    <IonCol>
+                      <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column"}}>
+                      {/* {a['id']} */}
+                        <h6 style={{margin:0, padding:0, color:"black"}}>
+                          Dikha Fransnanda
+                        </h6>
+                        <p style={{margin:0, padding:0}}>
+                          Kepuluan Riau, Indonesia
+                        </p>
+                      </IonRow>
+                      {/* <IonItem lines='none'> 
+                          <a href='/orderdetail?order_id=' slot="end" ><IonIcon icon={chevronForwardOutline} ></IonIcon></a>
+                    </IonItem> */}
+                      <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column", marginTop:"10px"}}>
+                      <h6 style={{margin:0, padding:0, color:"black"}}>
+                         Miptha
+                        </h6>
+                        <p style={{margin:0, padding:0}}>
+                         Tangerang, Banten, Indonesia
+                        </p>
+                      </IonRow>
+                    </IonCol>
+                    <IonCol size="1" style={{marginRight:"20px"}}>
+                      <IonRow>
+                        <IonCol>
+                          <IonIcon src={logoWhatsapp} style={{fontSize:"30px", color:"#27dd89"}}></IonIcon>
+                        </IonCol>
+                        <IonCol>
+                          <IonIcon src={logoWhatsapp} style={{fontSize:"30px", color:"#27dd89", marginTop:"20px"}}></IonIcon>
+                        </IonCol>
+                      </IonRow>
+                    </IonCol>
+                    <IonCol size="1" style={{marginRight:"10px"}}>
+                      <IonRow>
+                        <IonCol>
+                          <IonIcon src={callOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
+                        </IonCol>
+                        <IonCol>
+                          <IonIcon src={callOutline} style={{fontSize:"30px", color:"#0000A0", marginTop:"20px"}}></IonIcon>
+                        </IonCol>
+                      </IonRow>
+                    </IonCol>
+                  </IonRow>
                 </IonGrid>
               </IonCard>
               

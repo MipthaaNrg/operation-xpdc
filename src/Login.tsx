@@ -1,4 +1,4 @@
-import { IonAlert, IonButton, IonButtons, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonInput, IonLoading, IonModal, IonPage, IonRow, IonText, IonTitle, IonToolbar } from "@ionic/react"
+import { IonAlert, IonButton, IonButtons, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonInput, IonList, IonLoading, IonMenu, IonMenuToggle, IonModal, IonPage, IonRow, IonText, IonTitle, IonToolbar, useIonViewWillEnter } from "@ionic/react"
 import { useState } from "react";
 import { useHistory } from "react-router";
 import $ from 'jquery';
@@ -6,7 +6,6 @@ import './Login.css';
 import { StatusBar } from '@capacitor/status-bar';
 
 const Login: React.FC = () => {
-    $("#ComponentMenu").hide()
     const [alert, setAlert] = useState(false)
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -22,6 +21,8 @@ const Login: React.FC = () => {
     const [phone, setPhone] = useState('');
     const [alertMsg, setAlertMsg] = useState('');
     const [openlupakatasandi, setOpenLupaKataSandi] = useState(false);
+
+   
 
 
     const Auth = async (e: any) => {
@@ -96,6 +97,12 @@ const Login: React.FC = () => {
   StatusBar.setBackgroundColor({color:"#0000A0"});
     return (
         <IonPage> 
+            <IonMenu contentId="main" type="overlay" disabled={false} swipeGesture={false}>
+                <IonContent>
+                    <IonList id="inbox-list">
+                    </IonList>
+                </IonContent>
+            </IonMenu>
             <IonContent style={{color:"white", opacity:"1"}} className='op-bg'>
             <IonRow style={{paddingTop:"20px", textAlign:"center", justifyContent:"center"}} className='op-bg'>
                     <img src="assets/images/loginexpeditor.png"></img>

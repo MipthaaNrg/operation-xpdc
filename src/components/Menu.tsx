@@ -93,9 +93,9 @@ const Menu: React.FC = () => {
   const [loadingUbahPassword, setLoadingUbahPassword] = useState(false);
   const [alertUbahPassword, setAlertUbahPassword] = useState(false);
   const [msg, setMsg] = useState('')
-  function home(){
-    window.open('/Beranda', '_self')
-  }
+  // function home(){
+  //   window.open('/Beranda', '_self')
+  // }
 
   function modalnama(){
     setOpenModalUbahNama(true)
@@ -109,7 +109,7 @@ const Menu: React.FC = () => {
 
   return (
     <IonMenu contentId="main" type="overlay" >
-      <IonContent style={{backgroundImage:"url('assets/images/side-menu.png')" ,backgroundSize:"cover"}}>
+      <IonContent style={{backgroundImage:"url('assets/shape.jpg')" ,backgroundSize:"cover"}}>
         <IonList style={{background:"transparent"}}>
           <IonRow style={{textAlign:"center", justifyContent:"center"}}>
             <img src='assets/images/logo-xentra.png' width="25%" height="auto" style={{textAlign:"center", justifyContent:"center"}}></img>
@@ -163,10 +163,10 @@ const Menu: React.FC = () => {
               <IonIcon icon={homeOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
               <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Beranda</IonText>
             </IonItem>
-            <IonItem href='/Courier'style={{color:"#FFFFFF"}}>
+            {/* <IonItem href='/Courier'style={{color:"#FFFFFF"}}>
               <IonIcon icon={locationOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
               <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Courier</IonText>
-            </IonItem>
+            </IonItem> */}
             <IonItem href='/Deliver' style={{color:"#FFFFFF"}}>
               <IonIcon icon={readerOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
               <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Deliver</IonText>
@@ -175,10 +175,10 @@ const Menu: React.FC = () => {
               <IonIcon icon={busOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
               <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Pickup</IonText>
             </IonItem>
-            <IonItem href='/Reweight' style={{color:"#FFFFFF"}}>
+            {/* <IonItem href='/Reweight' style={{color:"#FFFFFF"}}>
               <IonIcon src='assets/icon/reweight.svg' style={{fontSize:"30px"}}></IonIcon>
               <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Reweight</IonText>
-            </IonItem>
+            </IonItem> */}
             <IonItem href='/Login' style={{color:"#FFFFFF"}}>
               <IonIcon icon={logOutOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
               <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Keluar</IonText>
@@ -287,7 +287,7 @@ const Menu: React.FC = () => {
                     </IonRow>
                     <IonRow style={{textAlign:"start", margin:"15px",padding:"5px", background:"#DEDEDE", borderRadius:"10px"}}>
                         <IonCol size="2" style={{padding:"10px", margin:"0"}}>
-                            <img src="assets/icon/psswd.svg" style={{width:"24px"}}/>
+                            <img src="assets/icon/password1.svg" style={{width:"24px"}}/>
                         </IonCol>
                         <IonCol style={{textAlign:'start'}}> 
                             <input style={{border:"none", outline:"none", fontSize:"18px", textAlign:'start', background:"#DEDEDE", color:"black", padding:"10px", width:"100%"}} placeholder="Kata Sandi Lama" type='password' name="passwordlama"></input>
@@ -295,7 +295,7 @@ const Menu: React.FC = () => {
                     </IonRow>
                     <IonRow style={{textAlign:"start", margin:"15px",padding:"5px", background:"#DEDEDE", borderRadius:"10px"}}>
                         <IonCol size="2" style={{padding:"10px", margin:"0"}}>
-                            <img src="assets/icon/psswd.svg" style={{width:"24px"}}/>
+                            <img src="assets/icon/password1.svg" style={{width:"24px"}}/>
                         </IonCol>
                         <IonCol style={{textAlign:'start'}}> 
                             <input style={{border:"none", outline:"none", fontSize:"18px", textAlign:'start',background:"#DEDEDE", color:"black", padding:"10px", width:"100%"}} placeholder="Kata Sandi Baru" type='password' name="password"></input>
@@ -303,7 +303,7 @@ const Menu: React.FC = () => {
                     </IonRow>
                     <IonRow style={{textAlign:"start", margin:"15px",padding:"5px", background:"#DEDEDE", borderRadius:"10px"}}>
                         <IonCol size="2" style={{padding:"10px", margin:"0"}}>
-                            <img src="assets/icon/psswd.svg" style={{width:"24px"}}/>
+                            <img src="assets/icon/password1.svg" style={{width:"24px"}}/>
                         </IonCol>
                         <IonCol style={{textAlign:'start'}}> 
                             <input style={{border:"none", outline:"none", fontSize:"18px", textAlign:'start', background:"#DEDEDE", color:"black", padding:"10px", width:"100%"}} placeholder="Ketik Ulang Kata Sandi" type='password' name="password2"></input>

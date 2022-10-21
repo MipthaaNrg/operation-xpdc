@@ -12,12 +12,7 @@ const Beranda: React.FC = () => {
     function opendeliver(){
         window.open('/Deliver','_self')
     }
-    function openreweight(){
-        window.open('/Reweight','_self')
-    }
-    function opencourier(){
-        window.open('/Courier','_self')
-    }
+
     return(
         <IonPage>
             <IonHeader>
@@ -40,7 +35,19 @@ const Beranda: React.FC = () => {
                 <IonRow style={{margin:"0", padding:"0"}}>
                     <img src="assets/images/beranda1.png"></img>
                 </IonRow>
-                <IonRow style={{margin:"10px", position:"relative", textAlign:"center", justifyContent:"center"}}>
+                 {/* Grid Menu */}
+                 <IonGrid style={{margin:"0", padding:"0"}}>
+                    <IonRow style={{margin:"0", padding:"0"}}>
+                        <IonCol  style={{padding:"10px", position:"relative", paddingLeft:"20px"}}>
+                        <img src='assets/icon/pickup.png' style={{margin:"2px auto", width:"99%", height:"97%"}} onClick={() =>{openpickup()}}/>
+                        </IonCol>
+                        <IonCol  style={{padding:"10px", position:"relative"}}>
+                        <img src='assets/icon/deliver.png' style={{margin:"2px auto", width:"100%", height:"100%" }} onClick={() =>{opendeliver()}}/>
+                        </IonCol>
+                    </IonRow>
+                </IonGrid>
+
+                {/* <IonRow style={{margin:"10px", position:"relative", textAlign:"center", justifyContent:"center"}}>
                 <IonCard style={{width:"40%", height:"auto", borderRadius:"15px", background:"#0000A0", padding:"0"}} onClick={openpickup}>
                     <IonRow style={{margin:"15px auto", paddingTop:"10px"}}> 
                         <IonCol style={{textAlign:"center", justifyContent:"center"}}>
@@ -65,33 +72,7 @@ const Beranda: React.FC = () => {
                     </IonCol>
                     </IonRow>
                 </IonCard>
-                </IonRow>
-                <IonRow style={{margin:"10px", textAlign:"center", justifyContent:"center"}}>
-                <IonCard style={{width:"40%", height:"auto", borderRadius:"15px", background:"#0000A0"}} onClick={openreweight}>
-                    <IonRow style={{margin:"15px auto", paddingTop:"10px"}}> 
-                        <IonCol style={{textAlign:"center", justifyContent:"center"}}>
-                        <IonRow style={{textAlign:"center", justifyContent:"center"}}>
-                            <img src="assets/icon/menu-reweight.svg" style={{height:"75px",transform:"translateY(-15%)"}}></img>
-                        </IonRow>
-                        <IonRow style={{textAlign:"center", justifyContent:"center"}}>
-                            <IonText mode="ios" style={{fontWeight:"bold", color:"white", fontSize:"24px", fontFamily:"Alegreya"}}>REWEIGHT</IonText>
-                        </IonRow>
-                    </IonCol>
-                    </IonRow>
-                </IonCard>
-                <IonCard style={{width:"40%", height:"auto", borderRadius:"15px", background:"#0000A0"}} onClick={opencourier}>
-                    <IonRow style={{margin:"15px auto", paddingTop:"10px"}}> 
-                        <IonCol style={{textAlign:"center", justifyContent:"center"}}>
-                        <IonRow style={{textAlign:"center", justifyContent:"center"}}>
-                            <img src="assets/icon/menu-courier.svg" style={{height:"75px",transform:"translateY(-15%)"}}></img>
-                        </IonRow>
-                        <IonRow style={{textAlign:"center", justifyContent:"center"}}>
-                            <IonText mode="ios" style={{fontWeight:"bold", color:"white", fontSize:"24px", fontFamily:"Alegreya"}}>COURIER</IonText>
-                        </IonRow>
-                    </IonCol>
-                    </IonRow>
-                </IonCard>
-                </IonRow>
+                </IonRow> */}
             </IonContent>
         </IonPage>
     )

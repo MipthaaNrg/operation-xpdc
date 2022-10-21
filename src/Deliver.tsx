@@ -12,9 +12,9 @@ const Deliver: React.FC = () => {
                     <IonRow style={{textAlign:"center", justifyContent:"center"}}>
                         <IonText mode="ios" style={{color:"#0000A0", textAlign:"center", justifyContent:"center"}}>DELIVER ORDER</IonText>
                     </IonRow>
-                    <IonButtons slot="end">
+                    {/* <IonButtons slot="end">
                         <IonIcon src="assets/icon/filter.svg" style={{fontSize:"30px"}}></IonIcon>
-                    </IonButtons>
+                    </IonButtons> */}
                 </IonToolbar>
             </IonHeader>
             <IonContent>
