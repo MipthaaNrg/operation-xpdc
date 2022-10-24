@@ -22,7 +22,6 @@ const Page: React.FC = () => {
       {/* <IonBadge className='badge' mode='ios'>3</IonBadge> */}
               </IonFabButton>
             </IonFab>
-          {/* <IonTitle>Home</IonTitle> */}
         </IonToolbar>
       </IonHeader>
 

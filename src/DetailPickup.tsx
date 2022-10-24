@@ -1,20 +1,21 @@
-import { IonActionSheet, IonAlert, IonAvatar, IonButton, IonButtons, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonInput, IonItem, IonLabel, IonList, IonMenuButton, IonModal, IonPage, IonRow, IonText, IonTextarea, IonTitle, IonToolbar, useIonAlert } from "@ionic/react"
+import { IonActionSheet, IonAlert, IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonInput, IonItem, IonLabel, IonList, IonMenuButton, IonModal, IonPage, IonRow, IonText, IonTextarea, IonTitle, IonToolbar, useIonAlert } from "@ionic/react"
 import { add, addCircleSharp, callOutline, checkboxOutline, checkmarkOutline, chevronBackOutline, closeCircle, closeOutline, createOutline, ellipseOutline, logoWhatsapp, pencilOutline, printOutline } from "ionicons/icons"
 import { useState } from "react";
 import { useHistory } from "react-router";
 import './DetailPickup.css';
 
 const DetailPickup: React.FC = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isOpenShipment, setIsOpenShipment] = useState(false);
-    const [isOpenGagalPickup, setIsOpenGagalPickup] = useState(false);
-    const [showAction, setShowAction] = useState(false);
-    const history = useHistory();
-    const [presentAlert] = useIonAlert();
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenShipment, setIsOpenShipment] = useState(false);
+  const [isOpenGagalPickup, setIsOpenGagalPickup] = useState(false);
+  const [showAction, setShowAction] = useState(false);
+  const history = useHistory();
+  const [presentAlert] = useIonAlert();
 
-    function openAction(){
-        setShowAction(true)
-    }
+  function openAction(){
+    setShowAction(true)
+  }
+
 return(
     <IonPage>
     <IonHeader>
@@ -64,7 +65,7 @@ return(
                   Kepulauan Riau, Indonesia
                 </p>
               </IonRow>
-              <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column",marginTop:"5px"}}>
+              <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column",marginTop:"15px"}}>
               <h6 style={{margin:0, padding:0, color:"black"}}>
                  Miptha
                 </h6>
@@ -290,7 +291,7 @@ return(
         </IonModal>
 
         
-          <IonActionSheet
+        <IonActionSheet
         isOpen={showAction}
         onDidDismiss={() => setShowAction(false)}
         buttons={[{
@@ -323,19 +324,17 @@ return(
 
     </IonContent>
     <IonFooter style={{background:"white"}}>
-            <IonGrid style={{padding:"10px 0", margin:"5px"}} onClick={openAction}>
-                <IonRow>
-                    <button style={{width:"100%", background:"#0000A0", borderRadius:"10px", display:"flex",justifyContent:"center"}} >
-                        <IonText mode='ios' style={{fontSize:"16px", color:"white", margin:"15px 5px"}}>
-                            ACTION
-                        </IonText>
-                    </button>
-                </IonRow>
-                </IonGrid>
-        </IonFooter>
-
-      
-</IonPage>
-)
+      <IonGrid style={{padding:"10px 0", margin:"5px"}} onClick={openAction}>
+        <IonRow>
+          <button style={{width:"100%", background:"#0000A0", borderRadius:"10px", display:"flex",justifyContent:"center"}} >
+              <IonText mode='ios' style={{fontSize:"16px", color:"white", margin:"15px 5px"}}>
+                  ACTION
+              </IonText>
+          </button>
+        </IonRow>
+      </IonGrid>
+    </IonFooter>
+  </IonPage>
+  )
 }
 export default DetailPickup
