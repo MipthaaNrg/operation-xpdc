@@ -27,7 +27,7 @@ return(
               <button onClick={history.goBack} style={{padding:"0" ,border:"none" , background: "transparent"}}>
                   <IonIcon icon={chevronBackOutline} id='iconBack' style={{fontSize:"32px" , margin:"0", color:"#0000A0"}}/>
               </button>
-              <IonTitle>Update Jumlah Koli</IonTitle>
+              <IonTitle>Detail Pickup</IonTitle>
               <IonButtons slot="end" style={{textAlign:"end"}}>
                 <IonButton onClick={() => setIsOpenShipment(true)} style={{textAlign:"end"}}>
                   <IonIcon src={addCircleSharp} style={{fontSize:"36px", color:"#0000A0", textAlign:"end"}}></IonIcon>
@@ -234,7 +234,7 @@ return(
           </IonHeader>
           <IonContent className="ion-padding">
             <IonLabel>Jumlah Koli</IonLabel>
-            <IonInput placeholder="Masukan Jumlah Koli" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
+            <IonInput placeholder="Masukan Jumlah Koli" type="number" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
             <button style={{padding:"15px", marginTop:"10px", width:"100%", borderRadius:"5px", background:"#0000A0", color:"white"}}>SIMPAN</button>
           </IonContent>
         </IonModal>
@@ -254,17 +254,17 @@ return(
           </IonHeader>
           <IonContent className="ion-padding">
             <IonLabel>Jumlah Barang</IonLabel>
-            <IonInput placeholder="Masukan Jumlah Barang" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
+            <IonInput placeholder="Masukan Jumlah Barang" type="number" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
             <IonLabel>Berat(Kg)</IonLabel>
-            <IonInput placeholder="Masukan Berat" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
+            <IonInput placeholder="Masukan Berat" type="number" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
             <IonLabel>Jumlah Koli</IonLabel>
-            <IonInput placeholder="Masukan Jumlah Koli" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
+            <IonInput placeholder="Masukan Jumlah Koli" type="number" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
             <IonLabel>Panjang(cm)</IonLabel>
-            <IonInput placeholder="Masukan Panjang" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
+            <IonInput placeholder="Masukan Panjang" type="number" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
             <IonLabel>Lebar(cm)</IonLabel>
-            <IonInput placeholder="Masukan Lebar" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
+            <IonInput placeholder="Masukan Lebar" type="number" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
             <IonLabel>Tinggi(cm)</IonLabel>
-            <IonInput placeholder="Masukan Tinggi" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
+            <IonInput placeholder="Masukan Tinggi" type="number" style={{background:"#DEDEDE", borderRadius:"5px", marginTop:"10px"}}></IonInput>
             <button style={{padding:"15px", marginTop:"10px", width:"100%", borderRadius:"5px", background:"#0000A0", color:"white"}}>SIMPAN</button>
           </IonContent>
         </IonModal>
