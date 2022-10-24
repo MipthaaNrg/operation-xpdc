@@ -1,4 +1,4 @@
-import { IonButtons, IonCard, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonMenuButton, IonPage, IonRow, IonText, IonTitle, IonToolbar } from "@ionic/react"
+import { IonBadge, IonButtons, IonCard, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonMenuButton, IonPage, IonRow, IonText, IonTitle, IonToolbar } from "@ionic/react"
 import { menuOutline, notifications } from "ionicons/icons"
 import './Beranda.css';
 
@@ -22,6 +22,8 @@ const Beranda: React.FC = () => {
                     </IonButtons>
                     <IonButtons slot="end">
                         <IonIcon icon={notifications} style={{fontSize:"28px", color:"#0000A0", paddingRight:"10px"}}></IonIcon>
+                        <IonBadge className='badge'mode='ios' style={{position:"absolute", top:"0", right:"0", marginLeft:"10px", fontSize:"14px", background:"red"}}>5
+                        </IonBadge>
                     </IonButtons>
                     <IonRow style={{textAlign:"center", justifyContent:"center"}}>
                         <IonText mode="ios" style={{color:"#0000A0", textAlign:"center", justifyContent:"center", fontWeight:"bold"}}>DASHBOARD</IonText>
@@ -33,16 +35,21 @@ const Beranda: React.FC = () => {
                     <IonText mode="ios" style={{fontSize:"20px", color:"#0000A0", fontWeight:"bold"}}>Hi, Expeditor TGR</IonText>
                 </IonRow>
                 <IonRow style={{margin:"0", padding:"0"}}>
-                    <img src="assets/images/beranda1.png"></img>
+                    <img src="assets/images/beranda1.png" style={{marginBottom:"15px"}}></img>
                 </IonRow>
                  {/* Grid Menu */}
                  <IonGrid style={{margin:"0", padding:"0"}}>
                     <IonRow style={{margin:"0", padding:"0"}}>
                         <IonCol  style={{padding:"10px", position:"relative", paddingLeft:"20px"}}>
-                        <img src='assets/icon/pickup.png' style={{margin:"2px auto", width:"99%", height:"97%"}} onClick={() =>{openpickup()}}/>
+                        <img src='assets/icon/pickup.png' style={{margin:"2px auto", width:"99%", height:"97%"}}
+                         onClick={() =>{openpickup()}}/>
+                          <IonBadge className='badge'mode='ios' style={{position:"absolute", top:"0", right:"0", marginRight:"10px", fontSize:"30px", background:"red"}}>15
+                        </IonBadge>
                         </IonCol>
                         <IonCol  style={{padding:"10px", position:"relative"}}>
                         <img src='assets/icon/deliver.png' style={{margin:"2px auto", width:"100%", height:"100%" }} onClick={() =>{opendeliver()}}/>
+                        <IonBadge className='badge'mode='ios' style={{position:"absolute", top:"0", right:"0", marginRight:"10px", fontSize:"30px", background:"red"}}>15
+                        </IonBadge>
                         </IonCol>
                     </IonRow>
                 </IonGrid>

@@ -2,6 +2,7 @@ import {
   IonAccordion,
   IonAccordionGroup,
   IonAlert,
+  IonBadge,
   IonButton,
   IonButtons,
   IonCard,
@@ -170,10 +171,14 @@ const Menu: React.FC = () => {
             <IonItem href='/Deliver' style={{color:"#FFFFFF"}}>
               <IonIcon icon={readerOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
               <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Deliver</IonText>
+              <IonBadge className='badge' mode='ios' style={{position:"relative", top:"0", right:"0", marginRight:"10px", fontSize:"18px", background:"red"}}>25
+              </IonBadge>
             </IonItem>
             <IonItem href='/pickup' style={{color:"#FFFFFF"}}>
               <IonIcon icon={busOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
               <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Pickup</IonText>
+              <IonBadge className='badge' mode='ios' style={{position:"relative", top:"0", right:"0", marginRight:"10px", fontSize:"18px", background:"red"}}>25
+              </IonBadge>
             </IonItem>
             {/* <IonItem href='/Reweight' style={{color:"#FFFFFF"}}>
               <IonIcon src='assets/icon/reweight.svg' style={{fontSize:"30px"}}></IonIcon>

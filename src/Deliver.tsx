@@ -36,7 +36,7 @@ const Deliver: React.FC = () => {
               <button onClick={history.goBack} style={{padding:"0" ,border:"none" , background: "transparent"}}>
                   <IonIcon icon={chevronBackOutline} id='iconBack' style={{fontSize:"32px" , margin:"0", color:"#0000A0"}}/>
               </button>
-              <IonTitle>Detail Pickup</IonTitle>
+              <IonTitle>DELIVER</IonTitle>
               <IonButtons slot="end" style={{textAlign:"end"}}>
                 <IonButton onClick={() => setIsOpenShipment(true)} style={{textAlign:"end"}}>
                   <IonIcon src={addCircleSharp} style={{fontSize:"36px", color:"#0000A0", textAlign:"end"}}></IonIcon>
@@ -61,86 +61,86 @@ const Deliver: React.FC = () => {
             </IonToolbar>
           </IonHeader>
           <IonContent className="ion-padding">
-                    <IonGrid>
-                        <IonRow>
-                            <IonCol size='12' style={{display:"flex", justifyContent:"start"}}>
-                                <input type='search' placeholder='No Tracking' style={{width:"100%", borderRadius:"10px 0 0 10px", padding:"15px 10px", border:"none", outline:"none", background:"rgba(0, 0, 0, 0.2)", color:"black"}}/>
-                                <button style={{background:"#0000A0", borderRadius:"0 10px 10px 0"}} >
-                                    <IonIcon icon={searchCircle} style={{color:"white", margin:"10px", fontSize:"30px"}} />
-                                </button>
-                            </IonCol>
-                        </IonRow>
-                    </IonGrid>
-                    <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
-                        <IonRow>
-                            <IonCol style={{textAlign:"start"}}>
-                            <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-1</h6>
-                            </IonCol>
-                            <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
-                            <IonCheckbox></IonCheckbox>
-                            </IonCol>
-                        </IonRow>
-                    </IonCard>
-                    <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
-                        <IonRow>
-                            <IonCol style={{textAlign:"start"}}>
-                            <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-2</h6>
-                            </IonCol>
-                            <IonCol size='2' style={{textAlign:"end",  margin:"10px 5px"}}>
-                            <IonCheckbox></IonCheckbox>
-                            </IonCol>
-                        </IonRow>
-                    </IonCard>
-                    <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
-                        <IonRow>
-                            <IonCol style={{textAlign:"start"}}>
-                            <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-3</h6>
-                            </IonCol>
-                            <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
-                            <IonCheckbox></IonCheckbox>
-                            </IonCol>
-                        </IonRow>
-                    </IonCard>
-                    <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
-                        <IonRow>
-                            <IonCol style={{textAlign:"start"}}>
-                            <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-4</h6>
-                            </IonCol>
-                            <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
-                            <IonCheckbox></IonCheckbox>
-                            </IonCol>
-                        </IonRow>
-                    </IonCard>
-                    <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
-                        <IonRow>
-                            <IonCol style={{textAlign:"start"}}>
-                            <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-5</h6>
-                            </IonCol>
-                            <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
-                            <IonCheckbox></IonCheckbox>
-                            </IonCol>
-                        </IonRow>
-                    </IonCard>
-                    <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
-                        <IonRow>
-                            <IonCol style={{textAlign:"start"}}>
-                            <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-6</h6>
-                            </IonCol>
-                            <IonCol size='2' style={{textAlign:"end", margin:"10px 5px",}}>
-                            <IonCheckbox></IonCheckbox>
-                            </IonCol>
-                        </IonRow>
-                    </IonCard>
-                    <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
-                        <IonRow>
-                            <IonCol style={{textAlign:"start"}}>
-                            <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-7</h6>
-                            </IonCol>
-                            <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
-                            <IonCheckbox></IonCheckbox>
-                            </IonCol>
-                        </IonRow>
-                    </IonCard>
+                <IonGrid>
+                    <IonRow>
+                        <IonCol size='12' style={{display:"flex", justifyContent:"start"}}>
+                            <input type='search' placeholder='No Tracking' style={{width:"100%", borderRadius:"10px 0 0 10px", padding:"15px 10px", border:"none", outline:"none", background:"rgba(0, 0, 0, 0.2)", color:"black"}}/>
+                            <button style={{background:"#0000A0", borderRadius:"0 10px 10px 0"}} >
+                                <IonIcon icon={searchCircle} style={{color:"white", margin:"10px", fontSize:"30px"}} />
+                            </button>
+                        </IonCol>
+                    </IonRow>
+                </IonGrid>
+                <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
+                    <IonRow>
+                        <IonCol style={{textAlign:"start"}}>
+                        <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-1</h6>
+                        </IonCol>
+                        <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
+                        <IonCheckbox ></IonCheckbox>
+                        </IonCol>
+                    </IonRow>
+                </IonCard>
+                <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
+                    <IonRow>
+                        <IonCol style={{textAlign:"start"}}>
+                        <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-2</h6>
+                        </IonCol>
+                        <IonCol size='2' style={{textAlign:"end",  margin:"10px 5px"}}>
+                        <IonCheckbox></IonCheckbox>
+                        </IonCol>
+                    </IonRow>
+                </IonCard>
+                <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
+                    <IonRow>
+                        <IonCol style={{textAlign:"start"}}>
+                        <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-3</h6>
+                        </IonCol>
+                        <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
+                        <IonCheckbox></IonCheckbox>
+                        </IonCol>
+                    </IonRow>
+                </IonCard>
+                <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
+                    <IonRow>
+                        <IonCol style={{textAlign:"start"}}>
+                        <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-4</h6>
+                        </IonCol>
+                        <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
+                        <IonCheckbox></IonCheckbox>
+                        </IonCol>
+                    </IonRow>
+                </IonCard>
+                <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
+                    <IonRow>
+                        <IonCol style={{textAlign:"start"}}>
+                        <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-5</h6>
+                        </IonCol>
+                        <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
+                        <IonCheckbox></IonCheckbox>
+                        </IonCol>
+                    </IonRow>
+                </IonCard>
+                <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
+                    <IonRow>
+                        <IonCol style={{textAlign:"start"}}>
+                        <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-6</h6>
+                        </IonCol>
+                        <IonCol size='2' style={{textAlign:"end", margin:"10px 5px",}}>
+                        <IonCheckbox></IonCheckbox>
+                        </IonCol>
+                    </IonRow>
+                </IonCard>
+                <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
+                    <IonRow>
+                        <IonCol style={{textAlign:"start"}}>
+                        <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-7</h6>
+                        </IonCol>
+                        <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
+                        <IonCheckbox></IonCheckbox>
+                        </IonCol>
+                    </IonRow>
+                </IonCard>
           </IonContent>
             <IonFooter style={{background:"white"}}>
                 <IonGrid style={{padding:"10px 0", margin:"5px"}} onClick={plugBarcode}>
