@@ -5,26 +5,26 @@ import { useState } from "react";
 import { useHistory } from "react-router";
 
 const Deliver: React.FC = () => {
-    const history = useHistory();
-    const [isOpen, setIsOpen] = useState(false);
-    const [isOpenShipment, setIsOpenShipment] = useState(false);
+  const history = useHistory();
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenShipment, setIsOpenShipment] = useState(false);
 
-    function plugBarcode(){
-      BarcodeScanner.scan({
-        preferFrontCamera:false,
-        showFlipCameraButton:false,
-        showTorchButton:true,
-        torchOn:false,
-        prompt:"Scan Barcode Tracking Ke Dalam Kotak Area",
-        resultDisplayDuration:500,
-        formats:'EAN_13,EAN_8,QR_CODE,PDF_417,CODABAR,CODE_128',
-        orientation: 'potrait',
-      }).then( r => {
-        alert(JSON.stringify(r))
-      }).catch(err => {
-        alert(err)
-      })
-    }
+  function plugBarcode(){
+    BarcodeScanner.scan({
+      preferFrontCamera:false,
+      showFlipCameraButton:false,
+      showTorchButton:true,
+      torchOn:false,
+      prompt:"Scan Barcode Tracking Ke Dalam Kotak Area",
+      resultDisplayDuration:500,
+      formats:'EAN_13,EAN_8,QR_CODE,PDF_417,CODABAR,CODE_128',
+      orientation: 'potrait',
+    }).then( r => {
+      alert(JSON.stringify(r))
+    }).catch(err => {
+      alert(err)
+    })
+  }
     return(
         <IonPage >
         <IonHeader>
@@ -106,7 +106,7 @@ const Deliver: React.FC = () => {
                 <IonGrid>
                   <IonRow style={{borderBottom:"solid 1px black"}}>
                     <IonCol style={{textAlign:"start"}}>
-                      <h6 style={{fontWeight:"800", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621</h6>
+                      <h6 style={{fontWeight:"800", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080623</h6>
                       <h6 style={{ color:"#28be69", margin:"10px 5px", fontSize:"14px"}}>Diterima</h6>
                     </IonCol>
                     <IonCol size='2' style={{textAlign:"end", padding:"5px 0"}} onClick={() => setIsOpen(true)}>
@@ -191,20 +191,20 @@ const Deliver: React.FC = () => {
                 <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
                     <IonRow>
                         <IonCol style={{textAlign:"start"}}>
-                        <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-2</h6>
+                            <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-2</h6>
                         </IonCol>
                         <IonCol size='2' style={{textAlign:"end",  margin:"10px 5px"}}>
-                        <IonCheckbox checked={true}></IonCheckbox>
+                            <IonCheckbox checked={true}></IonCheckbox>
                         </IonCol>
                     </IonRow>
                 </IonCard>
                 <IonCard style={{border:"solid 1px #0000A0", borderRadius:"10px"}}>
                     <IonRow>
                         <IonCol style={{textAlign:"start"}}>
-                        <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-3</h6>
+                            <h6 style={{fontWeight:"600", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621-3</h6>
                         </IonCol>
                         <IonCol size='2' style={{textAlign:"end", margin:"10px 5px"}}>
-                        <IonCheckbox></IonCheckbox>
+                            <IonCheckbox></IonCheckbox>
                         </IonCol>
                     </IonRow>
                 </IonCard>

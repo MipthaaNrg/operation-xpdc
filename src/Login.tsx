@@ -22,9 +22,6 @@ const Login: React.FC = () => {
     const [alertMsg, setAlertMsg] = useState('');
     const [openlupakatasandi, setOpenLupaKataSandi] = useState(false);
 
-   
-
-
     const Auth = async (e: any) => {
         e.preventDefault();
 
@@ -94,7 +91,7 @@ const Login: React.FC = () => {
         window.open('https://api.whatsapp.com/send?phone=+628117000133&text=Hi XPDC',"_self");
       }
 
-  StatusBar.setBackgroundColor({color:"#0000A0"});
+    StatusBar.setBackgroundColor({color:"#0000A0"});
     return (
         <IonPage> 
             <IonMenu contentId="main" type="overlay" disabled={false} swipeGesture={false}>
@@ -104,12 +101,12 @@ const Login: React.FC = () => {
                 </IonContent>
             </IonMenu>
             <IonContent style={{color:"white", opacity:"1"}} className='op-bg'>
-            <IonRow style={{paddingTop:"20px", textAlign:"center", justifyContent:"center"}} className='op-bg'>
+                <IonRow style={{paddingTop:"20px", textAlign:"center", justifyContent:"center"}} className='op-bg'>
                     <img src="assets/images/loginexpeditor.png"></img>
                 </IonRow>
                 <IonGrid style={{borderRadius:"40px 40px 0 0", transform:"translateY(-10%)",background:"white"}}>
-        <section>
-                            <form onSubmit={Auth}>
+                    <section>
+                        <form onSubmit={Auth}>
                         <IonGrid style={{maxWidth:"90%", padding:"15px 0 0 0"}}>
                             <IonRow style={{margin:"20px 0 15px 0", textAlign:"start", justifyContent:"start", padding:"15px", background:"#D9D9D9", borderRadius:"10px"}} className={(isEmail)?'anim-start-slide-left':'anim-start-slide-right'}>
                             <IonCol size='2' style={{margin:"0", padding:"0"}}>
@@ -140,40 +137,36 @@ const Login: React.FC = () => {
                                 </IonText>
                             </button>
                             </IonRow>
-
-                                </IonGrid>
-                                
-                            </form>
-                          
-        </section>
-        </IonGrid>
-        <IonAlert
-          isOpen={alertLanjutkan}
-          onDidDismiss={() => setAlertLanjutkan(false)}
-          header="Pesan"
-         
-          message={msg}
-          buttons={['OK']}
-          mode='ios'
-          cssClass="custom-alert"
-        />
-        <IonAlert
-          isOpen={isAlert}
-          onDidDismiss={() => setIsAlert(false)}
-          header={alertHeader}
-      
-          message={alertMessage}
-          buttons={['OK']}
-          mode='ios'
-        />
-        <IonLoading 
-          isOpen={alertLoading} 
-          message="Proses Login..."
-          spinner="bubbles"
-          mode="ios"
-        />
-
-        </IonContent>
+                            </IonGrid>
+                        </form>
+                    </section>
+                </IonGrid>
+                <IonAlert
+                isOpen={alertLanjutkan}
+                onDidDismiss={() => setAlertLanjutkan(false)}
+                header="Pesan"
+                
+                message={msg}
+                buttons={['OK']}
+                mode='ios'
+                cssClass="custom-alert"
+                />
+                <IonAlert
+                isOpen={isAlert}
+                onDidDismiss={() => setIsAlert(false)}
+                header={alertHeader}
+            
+                message={alertMessage}
+                buttons={['OK']}
+                mode='ios'
+                />
+                <IonLoading 
+                isOpen={alertLoading} 
+                message="Proses Login..."
+                spinner="bubbles"
+                mode="ios"
+                />
+            </IonContent>
         </IonPage>
     )
 }

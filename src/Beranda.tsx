@@ -1,4 +1,4 @@
-import { IonBadge, IonButtons, IonCard, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonMenuButton, IonPage, IonRow, IonText, IonTitle, IonToolbar } from "@ionic/react"
+import { IonBadge, IonButtons, IonCard, IonCol, IonContent, IonFab, IonFabButton, IonGrid, IonHeader, IonIcon, IonMenuButton, IonPage, IonRow, IonText, IonTitle, IonToolbar } from "@ionic/react"
 import { menuOutline, notifications } from "ionicons/icons"
 import './Beranda.css';
 
@@ -20,11 +20,18 @@ const Beranda: React.FC = () => {
                     <IonButtons slot="start">
                         <IonMenuButton style={{color:"#0000A0"}}/>
                     </IonButtons>
-                    <IonButtons slot="end">
-                        <IonIcon icon={notifications} style={{fontSize:"28px", color:"#0000A0", paddingRight:"10px"}}></IonIcon>
-                        <IonBadge className='badge'mode='ios' style={{position:"absolute", top:"0", right:"0", marginLeft:"10px", fontSize:"14px", background:"red"}}>5
+                     {/* Tombol notifikasi */}
+                    <IonFab vertical='top' horizontal='end' style={{ top:"5px", right:"5px"}}>
+                    <IonFabButton  href='/notifikasi' color="light" style={{top:"0", width:"40px", height:"40px"}}>
+                        <IonIcon icon={notifications} style={{color:"#0000A0", top:"0",fontSize:"20px"}}/>
+                        {/* {(qtyNotif !== '0')? */}
+                        <IonBadge className='badge'mode='ios' style={{background:"red",position:"absolute", top:"0", right:"0", marginRight:"10px"}}>
+                            {/* {qtyNotif} */} 3
                         </IonBadge>
-                    </IonButtons>
+                        {/* :''} */}
+                    </IonFabButton>
+                    </IonFab>
+
                     <IonRow style={{textAlign:"center", justifyContent:"center"}}>
                         <IonText mode="ios" style={{color:"#0000A0", textAlign:"center", justifyContent:"center", fontWeight:"bold"}}>DASHBOARD</IonText>
                     </IonRow>
@@ -38,7 +45,7 @@ const Beranda: React.FC = () => {
                     <img src="assets/images/beranda1.png" style={{marginBottom:"15px"}}></img>
                 </IonRow>
                  {/* Grid Menu */}
-                 <IonGrid style={{margin:"0", padding:"0"}}>
+                <IonGrid style={{margin:"0", padding:"0"}}>
                     <IonRow style={{margin:"0", padding:"0"}}>
                         <IonCol  style={{padding:"10px", position:"relative", paddingLeft:"20px"}}>
                         <img src='assets/icon/pickup.png' style={{margin:"2px auto", width:"99%", height:"97%"}}

@@ -27,6 +27,7 @@ import Login from './Login';
 import Lupapassword from './Lupapassword';
 import { ScreenOrientation} from '@awesome-cordova-plugins/screen-orientation';
 import { StatusBar } from '@capacitor/status-bar';
+import notifikasi from './notifikasi';
 
 
 
@@ -62,6 +63,7 @@ const App: React.FC = () => {
             <Route path="/pickup" component={pickup} exact={true}/>
             <Route path="/DetailPickup" component={DetailPickup} exact={true}/>
             <Route path="/Lupapassword" component={Lupapassword} exact={true}/>
+            <Route path="/notifikasi" component={notifikasi} exact={true}/>
             <Route path="/Login" component={Login} exact={true} />
             {/* <Route path="/page/:name" exact={true}>
               <Page />
