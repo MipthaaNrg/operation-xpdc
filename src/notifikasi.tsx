@@ -207,7 +207,8 @@ function filterClick(type:String){
   let css_property =
   {
     "color": "white",
-    "background": "#00F0FF"
+    // "background": "#00F0FF"
+    "background":"#128ae3"
   }
   let css_property_normal =
   {
@@ -300,7 +301,7 @@ function filterClick(type:String){
                       <IonCol size='6'style={{textAlign:'start', padding:'2px'}}>
                         <IonRow>
                           <IonCol size='2' style={{fontSize:'18px'}}>
-                          <IonIcon src='assets/icon/SVG Pengiriman.svg' style={{fontSize:'28px'}}/>
+                          <IonIcon src='assets/icon/deliver1.svg' style={{fontSize:'30px'}}/>
                             {/* {(a['reweight'] === '1')?predicticon('reweight'):(a['pembayaran'] === '1')?predicticon('pembayaran'):(a['voucher'] === '1')?predicticon('promo'):(a['saldo'] === '1')?predicticon('saldo'):(a['pengiriman'] === '1')?predicticon('pengiriman'):(a['news'] === '1')?predicticon('news'):predicticon('8678')} */}
                           </IonCol>
                           <IonCol style={{padding:'10px', margin:'0'}}>
@@ -373,7 +374,7 @@ function filterClick(type:String){
                       <IonCol size='6'style={{textAlign:'start', padding:'2px'}}>
                         <IonRow>
                           <IonCol size='2' style={{fontSize:'18px'}}>
-                          <IonIcon src='assets/icon/SVG Pengiriman.svg' style={{fontSize:'28px'}}/>
+                          <IonIcon src='assets/icon/deliver1.svg' style={{fontSize:'30px'}}/>
                             {/* {(a['reweight'] === '1')?predicticon('reweight'):(a['pembayaran'] === '1')?predicticon('pembayaran'):(a['voucher'] === '1')?predicticon('promo'):(a['saldo'] === '1')?predicticon('saldo'):(a['pengiriman'] === '1')?predicticon('pengiriman'):(a['news'] === '1')?predicticon('news'):predicticon('8678')} */}
                           </IonCol>
                           <IonCol style={{padding:'10px', margin:'0'}}>
@@ -403,18 +404,17 @@ function filterClick(type:String){
                 </IonCard>
             </div>
         {/* //   )}):''} */}
-        
-      <IonInfiniteScroll
-          onIonInfinite={loadData}
-          threshold="100px"
-          disabled={isInfiniteDisabled}
-      >
-        <IonInfiniteScrollContent
-            loadingSpinner="bubbles"
-            loadingText="Loading more data..."
-        ></IonInfiniteScrollContent>
-      </IonInfiniteScroll>
-      
+
+        <IonInfiniteScroll
+            onIonInfinite={loadData}
+            threshold="100px"
+            disabled={isInfiniteDisabled}>
+    
+            <IonInfiniteScrollContent
+                loadingSpinner="bubbles"
+                loadingText="Loading more data..."
+            ></IonInfiniteScrollContent>
+        </IonInfiniteScroll>
       </IonContent>
     </IonPage>
  );

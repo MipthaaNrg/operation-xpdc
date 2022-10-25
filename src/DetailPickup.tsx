@@ -289,7 +289,6 @@ return(
             </div>
           </IonContent>
         </IonModal>
-
         
         <IonActionSheet
         isOpen={showAction}
@@ -320,7 +319,6 @@ return(
         mode='ios'
       >
       </IonActionSheet>
-
 
     </IonContent>
     <IonFooter style={{background:"white"}}>
