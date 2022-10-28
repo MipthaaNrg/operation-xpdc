@@ -28,6 +28,10 @@ import Lupapassword from './Lupapassword';
 import { ScreenOrientation} from '@awesome-cordova-plugins/screen-orientation';
 import { StatusBar } from '@capacitor/status-bar';
 import notifikasi from './notifikasi';
+import inbound from './checker/inbound';
+import outbound from './checker/outbound';
+import manifest from './checker/manifest';
+import svc from './checker/svc';
 
 
 
@@ -65,6 +69,10 @@ const App: React.FC = () => {
             <Route path="/Lupapassword" component={Lupapassword} exact={true}/>
             <Route path="/notifikasi" component={notifikasi} exact={true}/>
             <Route path="/Login" component={Login} exact={true} />
+            <Route path="/checker/inbound" component={inbound} exact={true} />
+            <Route path="/checker/outbound" component={outbound} exact={true} />
+            <Route path="/checker/manifest" component={manifest} exact={true} />
+            <Route path="/checker/svc" component={svc} exact={true}/>
             {/* <Route path="/page/:name" exact={true}>
               <Page />
             </Route> */}

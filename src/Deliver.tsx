@@ -52,44 +52,27 @@ const Deliver: React.FC = () => {
                   <IonRow style={{borderBottom:"solid 1px black"}} >
                     <IonCol style={{textAlign:"start"}}>
                       <h6 style={{fontWeight:"800", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080621</h6>
-                      <h6 style={{ color:"#0000A0", margin:"10px 5px", fontSize:"14px"}}>Dalam Pengiriman</h6>
                     </IonCol>
                     <IonCol size='2' style={{textAlign:"end", padding:"5px 0"}} onClick={() => setIsOpen(true)}>
                       <button style={{padding:"10px", borderRadius:"5px", background:"#0000A0", color:"white"}}>Ubah</button>
                     </IonCol>
                   </IonRow>
                   <IonRow >
-                    <IonCol size='2'>
-                      <IonRow style={{padding:"10px 0"}}>
-                        <IonIcon icon={ellipseOutline} style={{background:"#A3A3A3", width:"24px", height:"24px", borderRadius:"50%", color:"#A3A3A3", margin:"auto"}}></IonIcon>
-                      </IonRow>
-                      <IonRow style={{padding:"10px 0",marginTop:"10px"}}>
-                        <IonIcon icon={ellipseOutline} style={{background:"#0000A0", width:"24px", height:"24px", borderRadius:"50%", color:"#0000A0", margin:"auto"}}></IonIcon>
-                      </IonRow>
-                    </IonCol>
                     <IonCol>
+                    <IonRow>
+                        <IonText>Penerima</IonText>
+                      </IonRow>
                       <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column"}}>
                       {/* {a['id']} */}
-                        <h6 style={{margin:0, padding:0, color:"black"}}>
-                          Dikha Fransananda
+                        <h6 style={{margin:0, padding:0, color:"black", fontWeight:"bold"}}>
+                          PT. MAJU JAYA
                         </h6>
-                        <p style={{margin:0, padding:0}}>
-                          Kepuluan Riau, Indonesia
-                        </p>
-                      </IonRow>
-                      {/* <IonItem lines='none'> 
-                          <a href='/orderdetail?order_id=' slot="end" ><IonIcon icon={chevronForwardOutline} ></IonIcon></a>
-                    </IonItem> */}
-                      <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column", marginTop:"10px"}}>
-                      <h6 style={{margin:0, padding:0, color:"black"}}>
-                         Miptha
-                        </h6>
-                        <p style={{margin:0, padding:0}}>
-                         Tangerang, Banten, Indonesia
+                        <p style={{margin:0, padding:0, color:"black"}}>
+                          Lampung, Kota Bandar Lampung, Tanjung Karang Barat, Sukajawa Baru, 35151
                         </p>
                       </IonRow>
                     </IonCol>
-                    <IonCol size="3" style={{marginRight:"20px"}}>
+                    {/* <IonCol size="3" style={{marginRight:"20px"}}>
                       <IonRow>
                         <IonCol>
                           <IonText mode="ios" style={{color:"black"}}>Qty: 16</IonText>
@@ -98,7 +81,27 @@ const Deliver: React.FC = () => {
                           <IonText mode="ios" style={{color:"black"}}>Jumlah Koli:</IonText>
                         </IonCol>
                       </IonRow>
-                    </IonCol>
+                    </IonCol> */}
+                  </IonRow>
+                  <IonRow>
+                    <IonGrid style={{padding:"10px 0"}}>
+                      <IonRow>
+                          <IonCol size='6' style={{margin:0, padding:"2px 5px"}}>
+                              <button style={{width:"100%", background:"#2dd36d", borderRadius:"10px", display:"flex",justifyContent:"center"}} >
+                                  <IonText mode='ios' style={{fontSize:"14px", color:"white", margin:"15px 5px"}}>
+                                      Chat Whatsapp
+                                  </IonText>
+                              </button>
+                          </IonCol>
+                          <IonCol size='6' style={{margin:0, padding:"2px 5px"}}>
+                              <button style={{width:"100%", background:"#3780fe", borderRadius:"10px", display:"flex", justifyContent:"center"}}>
+                                  <IonText mode='ios' style={{color:"white", fontSize:"14px", margin:"15px 5px"}}>
+                                      Telepon
+                                  </IonText>
+                              </button>
+                          </IonCol>
+                      </IonRow>
+                    </IonGrid>
                   </IonRow>
                 </IonGrid>
               </IonCard>
@@ -107,41 +110,27 @@ const Deliver: React.FC = () => {
                   <IonRow style={{borderBottom:"solid 1px black"}}>
                     <IonCol style={{textAlign:"start"}}>
                       <h6 style={{fontWeight:"800", color:"black", margin:"10px 5px", fontSize:"14px"}}>XPDC2022080623</h6>
-                      <h6 style={{ color:"#28be69", margin:"10px 5px", fontSize:"14px"}}>Diterima</h6>
                     </IonCol>
                     <IonCol size='2' style={{textAlign:"end", padding:"5px 0"}} onClick={() => setIsOpen(true)}>
                       <button style={{padding:"10px", borderRadius:"5px", background:"#0000A0", color:"white"}}>Ubah</button>
                     </IonCol>
                   </IonRow>
                   <IonRow >
-                    <IonCol size='2'>
-                      <IonRow style={{padding:"10px 0"}}>
-                        <IonIcon icon={ellipseOutline} style={{background:"#A3A3A3", width:"24px", height:"24px", borderRadius:"50%", color:"#A3A3A3", margin:"auto"}}></IonIcon>
-                      </IonRow>
-                      <IonRow style={{padding:"10px 0",marginTop:"10px"}}>
-                        <IonIcon icon={ellipseOutline} style={{background:"#0000A0", width:"24px", height:"24px", borderRadius:"50%", color:"#0000A0", margin:"auto"}}></IonIcon>
-                      </IonRow>
-                    </IonCol>
                     <IonCol>
+                      <IonRow>
+                        <IonText>Penerima</IonText>
+                      </IonRow>
                       <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column"}}>
                       {/* {a['id']} */}
-                        <h6 style={{margin:0, padding:0, color:"black"}}>
-                          Dikha Fransananda
+                        <h6 style={{margin:0, padding:0, color:"black", fontWeight:"bold"}}>
+                          PT. MAJU JAYA
                         </h6>
-                        <p style={{margin:0, padding:0}}>
-                          Kepuluan Riau, Indonesia
-                        </p>
-                      </IonRow>
-                      <IonRow style={{textAlign:"start", padding:"5px 0", display:"flex", flexDirection:"column", marginTop:"10px"}}>
-                      <h6 style={{margin:0, padding:0, color:"black"}}>
-                         Miptha
-                        </h6>
-                        <p style={{margin:0, padding:0}}>
-                         Tangerang, Banten, Indonesia
+                        <p style={{margin:0, padding:0, color:"black"}}>
+                          Lampung, Kota Bandar Lampung, Tanjung Karang Barat, Sukajawa Baru, 35151
                         </p>
                       </IonRow>
                     </IonCol>
-                    <IonCol size="3" style={{marginRight:"20px"}}>
+                    {/* <IonCol size="3" style={{marginRight:"20px"}}>
                       <IonRow>
                         <IonCol>
                           <IonText mode="ios" style={{color:"black"}}>Qty: 16</IonText>
@@ -150,7 +139,27 @@ const Deliver: React.FC = () => {
                           <IonText mode="ios" style={{color:"black"}}>Jumlah Koli:</IonText>
                         </IonCol>
                       </IonRow>
-                    </IonCol>
+                    </IonCol> */}
+                  </IonRow>
+                  <IonRow>
+                    <IonGrid style={{padding:"10px 0"}}>
+                      <IonRow>
+                          <IonCol size='6' style={{margin:0, padding:"2px 5px"}}>
+                              <button style={{width:"100%", background:"#2dd36d", borderRadius:"10px", display:"flex",justifyContent:"center"}} >
+                                  <IonText mode='ios' style={{fontSize:"14px", color:"white", margin:"15px 5px"}}>
+                                      Chat Whatsapp
+                                  </IonText>
+                              </button>
+                          </IonCol>
+                          <IonCol size='6' style={{margin:0, padding:"2px 5px"}}>
+                              <button style={{width:"100%", background:"#3780fe", borderRadius:"10px", display:"flex", justifyContent:"center"}}>
+                                  <IonText mode='ios' style={{color:"white", fontSize:"14px", margin:"15px 5px"}}>
+                                      Telepon
+                                  </IonText>
+                              </button>
+                          </IonCol>
+                      </IonRow>
+                    </IonGrid>
                   </IonRow>
                 </IonGrid>
             </IonCard>
@@ -290,7 +299,7 @@ const Deliver: React.FC = () => {
         {/* Tutup Modal */}
         
         </IonContent>
-        <IonFooter style={{background:"white"}}>
+        {/* <IonFooter style={{background:"white"}}>
             <IonGrid style={{padding:"10px 0", margin:"5px"}} onClick={plugBarcode}>
                 <IonRow>
                     <button style={{width:"100%", background:"#0000A0", borderRadius:"10px", display:"flex",justifyContent:"center"}}>
@@ -300,7 +309,7 @@ const Deliver: React.FC = () => {
                     </button>
                 </IonRow>
             </IonGrid>
-        </IonFooter>
+        </IonFooter> */}
     </IonPage>
     )
 }

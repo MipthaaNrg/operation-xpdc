@@ -29,7 +29,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, busOutline, closeOutline, heartOutline, heartSharp, homeOutline, locationOutline, logOutOutline, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, readerOutline, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { archiveOutline, archiveSharp, bookmarkOutline, busOutline, closeOutline, cubeOutline, documentTextOutline, heartOutline, heartSharp, homeOutline, locationOutline, logOutOutline, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, qrCodeOutline, readerOutline, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
 import './Menu.css';
 import { useState } from 'react';
 
@@ -180,6 +180,30 @@ const Menu: React.FC = () => {
               <IonBadge className='badge' mode='ios' style={{position:"relative", top:"0", right:"0", marginRight:"10px", fontSize:"18px", background:"red"}}>25
               </IonBadge>
             </IonItem>
+            <IonItem href='/checker/inbound' style={{color:"#FFFFFF"}}>
+              <IonIcon icon={cubeOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
+              <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Inbound</IonText>
+              <IonBadge className='badge' mode='ios' style={{position:"relative", top:"0", right:"0", marginRight:"10px", fontSize:"18px", background:"red"}}>0
+              </IonBadge>
+            </IonItem>
+            <IonItem href='/checker/outbound' style={{color:"#FFFFFF"}}>
+              <IonIcon icon={documentTextOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
+              <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Outbound</IonText>
+              <IonBadge className='badge' mode='ios' style={{position:"relative", top:"0", right:"0", marginRight:"10px", fontSize:"18px", background:"red"}}>5
+              </IonBadge>
+            </IonItem>
+            <IonItem href='/checker/manifest' style={{color:"#FFFFFF"}}>
+              <IonIcon icon={locationOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
+              <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>manifest</IonText>
+              <IonBadge className='badge' mode='ios' style={{position:"relative", top:"0", right:"0", marginRight:"10px", fontSize:"18px", background:"red"}}>2
+              </IonBadge>
+            </IonItem>
+            <IonItem href='/checker/svc' style={{color:"#FFFFFF"}}>
+              <IonIcon icon={qrCodeOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
+              <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>SVC</IonText>
+              <IonBadge className='badge' mode='ios' style={{position:"relative", top:"0", right:"0", marginRight:"10px", fontSize:"18px", background:"red"}}>0
+              </IonBadge>
+            </IonItem>
             {/* <IonItem href='/Reweight' style={{color:"#FFFFFF"}}>
               <IonIcon src='assets/icon/reweight.svg' style={{fontSize:"30px"}}></IonIcon>
               <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Reweight</IonText>
@@ -188,6 +212,7 @@ const Menu: React.FC = () => {
               <IonIcon icon={logOutOutline} style={{fontSize:"30px", color:"#0000A0"}}></IonIcon>
               <IonText mode='ios' style={{padding:"10px", fontSize:"20px", color:"#0000A0"}}>Keluar</IonText>
             </IonItem>
+
           </IonMenuToggle>
         </IonList>
 
