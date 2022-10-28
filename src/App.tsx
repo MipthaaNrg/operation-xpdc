@@ -32,6 +32,8 @@ import inbound from './checker/inbound';
 import outbound from './checker/outbound';
 import manifest from './checker/manifest';
 import svc from './checker/svc';
+import outboundDetail from './checker/outboundDetail';
+import inboundDetail from './checker/inboundDetail';
 
 
 
@@ -72,6 +74,8 @@ const App: React.FC = () => {
             <Route path="/checker/inbound" component={inbound} exact={true} />
             <Route path="/checker/outbound" component={outbound} exact={true} />
             <Route path="/checker/manifest" component={manifest} exact={true} />
+            <Route path="/checker/outboundDetail" component={outboundDetail} exact={true}/>
+            <Route path="/checker/inboundDetail" component={inboundDetail} exact={true}/>
             <Route path="/checker/svc" component={svc} exact={true}/>
             {/* <Route path="/page/:name" exact={true}>
               <Page />

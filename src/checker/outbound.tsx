@@ -7,7 +7,7 @@ const useOutbound: React.FC = () => {
   const [isCloseManifest, setIsCloseManifest] = useState(false);
 
     function detailoutbound(){
-        window.open('/outboundDetail','_self')
+        window.open('/checker/outboundDetail','_self')
     }
 
     function plugBarcode(){

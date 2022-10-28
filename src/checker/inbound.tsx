@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const inbound: React.FC = () => {
     function detailinbound(){
-        window.open('/inboundDetail','_self')
+        window.open('/checker/inboundDetail','_self')
     }
     
     return(
